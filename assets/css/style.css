@@ -58,3 +58,17 @@ body {
 .nav__link.active {
     background-color: #004AF2;
 }
+
+/*Intro*/
+.intro {
+    height: 600px;
+    background: #000 url("../img/photo\ bg.jpg") no-repeat center;
+    background-size: cover;
+}
+
+.intro__inner {
+    height: 600px;
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+}
