@@ -13,6 +13,17 @@ body {
     box-sizing: border-box;    
 }
 
+h1, h2, h3, h4, h5, h6 {
+    margin: 0;
+}
+
+
+ul, ol {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
 /* Container */
 .container {
     width: 100%;
@@ -71,4 +82,135 @@ body {
     display: flex;
     align-items: flex-end;
     justify-content: space-between;
+}
+
+.intro__text {
+    margin-bottom: 45px;
+    text-align: right;
+}
+
+.intro__countries {
+    color: #fff;
+    font-size: 15px;
+}
+
+.intro__title {
+    position: relative;
+    font-family: 'Lato', sans-serif;
+    font-size: 110px;
+    line-height: 0.9;
+    color: rgba(255, 255, 255, 0.8);
+    font-weight: 700;
+}
+
+.intro__title-amp {
+    position: absolute;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 170px;
+    line-height: 1;
+    font-weight: 900;
+    color: rgba(255, 255, 255, 0.2)
+    
+}
+
+/*Request-form*/
+.request-form {
+    width: 100%;
+    max-width: 400px;
+    overflow: hidden;
+    background-color: #004AF2;
+    border-radius: 5px;
+}
+
+.request-form__header {
+    background-color: #033FC9;
+    color: #fff;
+    padding: 20px 30px;
+}
+
+.request-form__title {
+    font-family: 'Lato', sans-serif;
+    font-weight: 900;
+    font-size: 30px;
+}
+
+.request-form__text {
+    font-size: 15px;
+    line-height: 1.4;
+}
+
+.request-form__content {
+    padding: 30px;
+}
+
+.request-form--intro {
+    position: relative;
+    bottom: -30px;
+}
+
+/*Form*/
+.form__group {
+    margin-bottom: 25px;
+}
+
+.input {
+    font-family: 'PT Sans', sans-serif;
+    display: block;
+    width: 100%;
+    padding-bottom: 12px;
+    padding-left: 50px;
+    background: none;
+    border: none;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.25);
+    font-size: 16px;
+    color: #fff;
+
+    transition: border-color .1s linear;
+}
+
+.input::placeholder {
+    color: #fff;
+}
+
+.input:focus {
+    outline: none; 
+    border-bottom-color: #fff;
+}
+
+.input--user {
+    background: url("../img/user-icon.svg") no-repeat left 15px top 5px;
+}
+
+.input--phone {
+    background: url("../img/phone-icon.svg") no-repeat left 15px top 5px;
+}
+
+.input--email {
+    background: url("../img/mail-icon.svg") no-repeat left 15px top 5px;
+}
+
+/*Btn*/ 
+.btn {
+    padding: 11px 20px;
+    font-family: 'PT Sans', sans-serif;
+    font-size: 18px;
+    line-height: 1.1;
+    color: #fff;
+    font-weight: 700;;
+    text-align: center;
+    cursor: pointer; 
+    background-color: #585858;
+    border: 0;
+    border-radius: 5px;
+}
+
+.btn--block {
+    display: block;
+    width: 100%;
+}
+
+.btn--orange {
+    background-image: linear-gradient(to right, #ff903e, #ff2c2c);
 }
