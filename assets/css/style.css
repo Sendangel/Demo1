@@ -17,12 +17,17 @@ h1, h2, h3, h4, h5, h6 {
     margin: 0;
 }
 
+p {
+    margin: 0 0 10px;
+}
+
 
 ul, ol {
     margin: 0;
     padding: 0;
     list-style: none;
 }
+
 
 /* Container */
 .container {
@@ -31,6 +36,7 @@ ul, ol {
     margin: 0 auto;
     padding: 0 15px;
 }
+
 
 /* Header */
 .header {
@@ -51,6 +57,7 @@ ul, ol {
 
 }
 
+
 /* Nav */
 .nav {
     display: flex;
@@ -70,11 +77,13 @@ ul, ol {
     background-color: #004AF2;
 }
 
+
 /*Intro*/
 .intro {
     height: 600px;
     background: #000 url("../img/photo\ bg.jpg") no-repeat center;
     background-size: cover;
+    margin-bottom: 30px;
 }
 
 .intro__inner {
@@ -115,6 +124,7 @@ ul, ol {
     
 }
 
+
 /*Request-form*/
 .request-form {
     width: 100%;
@@ -149,6 +159,7 @@ ul, ol {
     position: relative;
     bottom: -30px;
 }
+
 
 /*Form*/
 .form__group {
@@ -191,6 +202,7 @@ ul, ol {
     background: url("../img/mail-icon.svg") no-repeat left 15px top 5px;
 }
 
+
 /*Btn*/ 
 .btn {
     padding: 11px 20px;
@@ -213,4 +225,92 @@ ul, ol {
 
 .btn--orange {
     background-image: linear-gradient(to right, #ff903e, #ff2c2c);
+}
+
+
+/*Services*/
+.services {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 30px 0 50px;
+    position: relative;
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 5px 30px rgba(0, 0, 0, 0.2)
+}
+
+.services__main-title {
+    font-family: 'Lato', sans-serif;
+    font-weight: 900;
+    line-height: 1;
+    color: rgba(44, 44, 44, 0.05);
+    font-size: 90px;
+    position: absolute;
+    bottom: 12px;
+    right: 30px;
+    z-index: 1;
+    pointer-events: none;
+}
+
+.services__item {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 25%;
+    padding: 0 25px;
+    margin-bottom: 30px;
+}
+
+.services__title {
+    margin-bottom: 20px;
+    font-family: 'Lato', sans-serif;
+    color: #2C2C2C;
+    font-size: 24px;
+    line-height: 1.2;
+    font-weight: 900;
+}
+
+.services__text {
+    margin-bottom: 20px;
+    color: #585858;
+    font-size: 15px;
+    line-height: 1.4;
+}
+
+.services__footer {
+    margin-top: auto;
+}
+
+.services__link {
+    display: inline-block;
+    font-size: 15px;
+    color: #004AF2;
+    text-decoration: none;
+    transition: color 0.1s linear;
+}
+
+.services__link:hover {
+    color: #FF3E2F;
+}
+
+.services__link::after {
+    content: "";
+    display: block;
+    width: 10px;
+    height: 2px;
+    margin-top: 5px;
+    background-color: #004AF2;
+
+    transition: width 0.1s linear;
+}
+
+.services__link:hover::after {
+    width: 100%;
+    background-color: #FF3E2F;
+}
+
+
+/*Section*/
+.section {
+    padding: 60px 0;
 }
