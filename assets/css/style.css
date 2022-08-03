@@ -236,10 +236,6 @@ ul, ol {
     padding: 60px 0;
 }
 
-.section--map {
-    background: url('../img/map.svg') no-repeat left 30px top 130px;
-}
-
 .section__title {
     margin-bottom: 40px;
     font-family: 'Lato', sans-serif;
@@ -344,6 +340,7 @@ ul, ol {
 
 .clients__logos {
     width: 60%;
+    background: url('../img/map.svg') no-repeat center;
 }
 
 .clients__reviews {
