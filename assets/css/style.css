@@ -7,6 +7,10 @@ body {
     color: #585858;
 }
 
+body.no-scroll {
+    overflow: hidden;
+}
+
 *,
 *:before,
 *:after {
@@ -209,6 +213,31 @@ ul, ol {
 
 .input--email {
     background: url("../img/mail-icon.svg") no-repeat left 15px top 5px;
+}
+
+.input--dark {
+    border-bottom-color: #E8E8E8;
+    color: #2C2C2C
+}
+
+.input--dark::placeholder {
+    color: #2C2C2C;
+}
+
+.input--dark:focus {
+    border-bottom-color: #000;
+}
+
+.input--dark.input--user {
+    background-image: url("../img/user-black-icon.svg");
+}
+
+.input--dark.input--phone {
+    background-image: url("../img/phone-black-icon.svg");
+}
+
+.input--dark.input--email {
+    background-image: url(../img/mail-black-icon.svg);
 }
 
 
@@ -748,4 +777,112 @@ ul, ol {
 
 .footer__nav a:hover {
     text-decoration: underline;
+}
+
+
+/*Modal*/
+.modal {
+    display: none;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.9);
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 2000;
+}
+
+.modal.show {
+    display: flex;
+}
+
+.modal__header {
+    text-align: center;
+    margin-bottom: 25px;
+}
+
+.modal__icon {
+    margin-bottom: 10px;
+}
+
+.modal__inner {
+    width: 400px;
+    padding: 25px;
+    background-color: #fff;
+    position: relative;
+}
+
+.modal__title {
+    margin-bottom: 10px;
+    font-family: 'Lato', sans-serif;
+    font-size: 24px;
+    font-weight: 900;
+    line-height: 1.2;
+    color: #004AF2;
+}
+
+.modal__text {
+    font-size: 15px;
+    color: #2C2C2C;
+}
+
+.modal__footer {
+    margin-top: 25px;
+    padding-top: 25px;
+    border-top: 1px solid #E8E8E8;
+    text-align: center;
+}
+
+.modal__footer-title {
+    margin-bottom: 10px;
+    font-family: 'Lato', sans-serif;
+    font-size: 18px;
+    font-weight: 900;
+    line-height: 1.2;
+    color: #2C2C2C
+}
+
+.modal__contacts {
+    font-size: 15px;
+    color: #2c2c2c;
+    font-style: normal;
+}
+
+.modal__contacts p {
+    margin-bottom: 3px;
+}
+
+.modal__contacts a {
+    color: inherit;
+    text-decoration: none;
+}
+
+.modal__contacts a:hover {
+    text-decoration: underline;
+}
+
+.modal__close {
+    width: 20px;
+    height: 20px;
+    background: none;
+    border: none;
+    padding: 0;
+    cursor: pointer;
+    position: absolute;
+    top: -20px;
+    right: -30px;
+    z-index: 1;
+
+    transition: transform 0.2s linear;
+}
+
+.modal__close img {
+    display: block;
+}
+
+.modal__close:hover {
+    transform: rotate(90deg);
 }
