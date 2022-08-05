@@ -13,7 +13,7 @@
 <div class="page">
     
     <!--Header-->
-    <header class="header header--dark">
+    <header class="header header--dark" id="header">
         <div class="container">
             <div class="header__inner">
                 <a href="index.html">
@@ -21,11 +21,12 @@
                 </a>
 
                 <nav class="nav">
-                    <a class="nav__link active" href="#">Services</a>
-                    <a class="nav__link" href="#">Clients</a>
-                    <a class="nav__link" href="#">Benefits</a>
-                    <a class="nav__link" href="#">Team</a>
-                    <a class="nav__link" href="#">News</a>
+                    <a class="nav__link active" href="#" data-scroll="#services">Services</a>
+                    <a class="nav__link" href="#" data-scroll="#clients">Clients</a>
+                    <a class="nav__link" href="#" data-scroll="#benefits">Benefits</a>
+                    <a class="nav__link" href="#" data-scroll="#team">Team</a>
+                    <a class="nav__link" href="#" data-scroll="#mission">Mission</a>
+                    <a class="nav__link" href="#" data-scroll="#news">News</a>
                     <a class="nav__link" href="#">Contact Us</a>
                 </nav>
 
@@ -38,7 +39,7 @@
 
 
     <!--Intro-->
-    <div class="intro">
+    <div class="intro" id="intro">
         <div class="container">
             <div class="intro__inner">
                 <div class="request-form request-form--intro">
@@ -75,11 +76,11 @@
 
             </div><!--/.intro__inner-->
         </div><!--/.container-->
-    </div><!--/.intro-->
+    </div>
 
 
     <!--Services-->
-    <section class="section">
+    <section class="section" id="services">
         <div class="container">
             <div class="services">
                 <h2 class="services__main-title">Services</h2>
@@ -128,7 +129,7 @@
 
 
     <!--Clients-->
-    <section class="section section--map">
+    <section class="section section--map" id="clients">
         <div class="container">
             <h2 class="section__title"><span class="">Our</span> clients</h2>
 
@@ -204,7 +205,7 @@
 
 
     <!--Benefits-->
-    <section class="section">
+    <section class="section" id="benefits">
         <div class="container">
             <h2 class="section__title"><span>Our</span> benefits</h2>
             <div class="benefits">
@@ -249,7 +250,7 @@
 
 
     <!--Team-->
-    <section class="section section--gray">
+    <section class="section section--gray" id="team">
         <div class="container">
             <h2 class="section__title"><span>Our</span> team</h2>
 
@@ -315,7 +316,7 @@
 
 
     <!--Mission-->
-    <section class="section">
+    <section class="section" id="mission">
         <div class="container">
             <h2 class="mission-title">Our mission</h2>
             <div class="mission">
@@ -331,7 +332,7 @@
 
 
     <!--News-->
-    <section class="section section--last">
+    <section class="section section--last" id="news">
         <div class="container">
             <h2 class="section__title"><span>Interesting</span> to read</h2>
 
@@ -456,6 +457,10 @@
         </div><!--/.modal__inner-->
     </div><!--/.Thanks_Modal-->
 
+
+    <!--Javascript-->
+    <script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.6.0.min.js"></script>
+    <script src="assets/js/app.js"></script>
 
 </body>
 </html>
