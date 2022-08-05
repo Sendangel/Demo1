@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <link rel="stylesheet" href="assets/css/style.css">
     <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700;900&family=PT+Sans:wght@400;700&display=swap" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>CenterLogistic</title>
 </head>
 <body>
@@ -15,7 +16,9 @@
     <header class="header header--dark">
         <div class="container">
             <div class="header__inner">
-                <a href="index.html"><img src="assets/img/logo.svg" alt="CenterLogistic"></a>
+                <a href="index.html">
+                    <img class="img" src="assets/img/logo.svg" alt="CenterLogistic">
+                </a>
 
                 <nav class="nav">
                     <a class="nav__link active" href="#">Services</a>
@@ -25,6 +28,10 @@
                     <a class="nav__link" href="#">News</a>
                     <a class="nav__link" href="#">Contact Us</a>
                 </nav>
+
+                <button class="burger" type="button">
+                    <img class="burger__icon" src="assets/img/burger.svg" alt="burger">
+                </button>
             </div><!--/.header__inner-->
         </div><!--/.container-->
     </header>
@@ -121,7 +128,7 @@
 
 
     <!--Clients-->
-    <section class="section">
+    <section class="section section--map">
         <div class="container">
             <h2 class="section__title"><span class="">Our</span> clients</h2>
 
@@ -130,42 +137,42 @@
                     <ul class="clients__list">
                         <li>
                             <a href="#" target="_blank">
-                                <img src="assets/img/clients/atica.svg" alt="atica">
+                                <img class="clients__list-logo img" src="assets/img/clients/atica.svg" alt="atica">
                             </a>
                         </li>
                         <li>
                             <a href="#" target="_blank">
-                                <img src="assets/img/clients/hex-lab.svg" alt="HEXLAB">
+                                <img class="clients__list-logo img" src="assets/img/clients/hex-lab.svg" alt="HEXLAB">
                             </a>
                         </li>
                         <li>
                             <a href="#" target="_blank">
-                                <img src="assets/img/clients/amara.svg" alt="amara">
+                                <img class="clients__list-logo img" src="assets/img/clients/amara.svg" alt="amara">
                             </a>
                         </li>
                         <li>
                             <a href="#" target="_blank">
-                                <img src="assets/img/clients/muzica-2.svg" alt="muzica">
+                                <img class="clients__list-logo img" src="assets/img/clients/muzica-2.svg" alt="muzica">
                             </a>
                         </li>
                         <li>
                             <a href="#" target="_blank">
-                                <img src="assets/img/clients/solaytic.svg" alt="solaytic">
+                                <img class="clients__list-logo img" src="assets/img/clients/solaytic.svg" alt="solaytic">
                             </a>
                         </li>
                         <li>
                             <a href="#" target="_blank">
-                                <img src="assets/img/clients/hexa.svg" alt="hexa">
+                                <img class="clients__list-logo img" src="assets/img/clients/hexa.svg" alt="hexa">
                             </a>
                         </li>
                         <li>
                             <a href="#" target="_blank">
-                                <img src="assets/img/clients/utosia-2.svg" alt="utosia">
+                                <img class="clients__list-logo img" src="assets/img/clients/utosia-2.svg" alt="utosia">
                             </a>
                         </li>
                         <li>
                             <a href="#" target="_blank">
-                                <img src="assets/img/clients/fox-hub.svg" alt="foxhub">
+                                <img class="clients__list-logo img" src="assets/img/clients/fox-hub.svg" alt="foxhub">
                             </a>
                         </li>
                     </ul>
@@ -182,10 +189,8 @@
                                 </div>
                             </div>
                             <div class="reviews__content">
-                                <p>  Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. 
-                                </p>
-                                <p>  Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. 
-                                </p>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Praesentium laboriosam eius perspiciatis molestiae aut repellat delectus fugiat veritatis maxime impedit harum accusamus, quas nihil laudantium minima ex sapiente. Error, repudiandae.</p>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Praesentium laboriosam eius perspiciatis molestiae aut repellat delectus fugiat veritatis maxime impedit harum accusamus, quas nihil laudantium minima ex sapiente. Error, repudiandae.</p>
                             </div>
                         </div>
                     </div><!--/.reviews-->
@@ -199,8 +204,9 @@
 
 
     <!--Benefits-->
-    <div class="section">
+    <section class="section">
         <div class="container">
+            <h2 class="section__title"><span>Our</span> benefits</h2>
             <div class="benefits">
                 <div class="benefits__col">
                     <ul class="benefits-list">
@@ -239,7 +245,7 @@
                 </div>
             </div><!--/.benefits-->
         </div><!--/.container-->
-    </div><!--/.section-->
+    </section>
 
 
     <!--Team-->
