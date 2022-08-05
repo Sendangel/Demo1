@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <link rel="stylesheet" href="assets/css/style.css">
     <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700;900&family=PT+Sans:wght@400;700&display=swap" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>CenterLogistic</title>
 </head>
 <body>
@@ -23,6 +24,11 @@
                     <a class="nav__link" href="text.html">Privacy Policy</a>
                     <a class="nav__link" href="text2.html">Terms &amp; Conditions</a>
                 </nav>
+
+                <button class="burger" type="button">
+                    <img class="burger__icon" src="assets/img/burger.svg" alt="burger">
+                </button>
+
             </div><!--/.header__inner-->
         </div><!--/.container-->
     </header>
@@ -37,8 +43,10 @@
     <section class="section section--last">
         <div class="container">
             <main class="main">
-                <div class="main__col">
-                    <h1 class="section__title"><span>Interesting</span> to read</h1>
+                <div class="main__col main__col--left">
+                    <h1 class="section__title">
+                        <span>Interesting</span> to read</h1>
+
                     <div class="articles articles--column">
                         <article class="articles__item">
                             <h4 class="articles__title">
@@ -83,7 +91,7 @@
                     <a class="btn btn--orange" href="index.html"><span>Back to home</span></a>
                 </div>
 
-                <div class="main__col">
+                <div class="main__col main__col--right">
                     <div class="request-form request-form--right">
                         <div class="request-form__header">
                             <h3 class="request-form__title">Get Callback</h3>
