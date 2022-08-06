@@ -101,6 +101,8 @@ ul, ol {
     padding: 0 15px;
     color: #fff;
     text-decoration: none;
+
+    transition: background 0.2s linear;
 }
 
 .nav__link:not(.active):hover {
@@ -869,7 +871,7 @@ ul, ol {
 }
 
 .modal.show {
-    display: flex;
+    display: block;
 }
 
 .modal__header {
@@ -894,6 +896,11 @@ ul, ol {
     padding: 25px;
     background-color: #fff;
     position: relative;
+    opacity: 0;
+
+    transform: scale(0.5);
+    transition: transform 0.2s ease-out, opacity 0.2s ease-out;
+
 }
 
 .modal__title {
@@ -957,6 +964,10 @@ ul, ol {
     z-index: 1;
 
     transition: transform 0.2s linear;
+}
+
+.modal__close:focus {
+    outline: none;
 }
 
 .modal__close img {
