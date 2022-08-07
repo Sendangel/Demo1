@@ -130,5 +130,48 @@ $(function() {
     }
 
 
+    /* Slick slider 
+    ====================================
+    https://kenwheeler.github.io/slick/ */ 
+
+
+    /* Intro Slider */ 
+    let introSlider = $("#introSlider");
+
+    introSlider.slick({
+        infinite: true,
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        arrows: false,
+        fade: true,
+        autoplay: false,
+        autoplaySpeed: 4000,
+        speed: 500
+    });
+
+
+    $('#introSliderPrev').on('click', function() {
+        introSlider.slick('slickPrev')
+    });
+
+    $('#introSliderNext').on('click', function() {
+        introSlider.slick('slickNext')
+    });
+
+
+    /* Reviews Slider */
+    
+    let reviewsSlider = $("#reviewsSlider");
+
+    reviewsSlider.slick({
+        infinite: true,
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        arrows: false,
+        dots: true,
+        speed: 500
+    });
+    
+
 });
 

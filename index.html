@@ -2,6 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <link rel="stylesheet" href="assets/css/slick.css">
     <link rel="stylesheet" href="assets/css/style.css">
     <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700;900&family=PT+Sans:wght@400;700&display=swap" rel="stylesheet">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -40,6 +41,16 @@
 
     <!--Intro-->
     <div class="intro" id="intro">
+
+        <div class="intro__slider" id="introSlider">
+            <div class="slider-item">
+                <div class="intro__slider-item" style="background-image: url(assets/img/intro-bg.jpg)"></div>
+            </div>
+            <div class="slider-item">
+                <img class="intro__slider-photo" src="assets/img/intro-bg.jpg" alt="">
+            </div>
+        </div>
+
         <div class="container">
             <div class="intro__inner">
                 <div class="request-form request-form--intro">
@@ -74,6 +85,10 @@
                     </h1>
                 </div>
 
+                <div class="intro__slider-arrows">
+                    <button class="intro__slider-btn  intro__slider-btn--prev" id="introSliderPrev" type="button">Prev</button>
+                    <button class="intro__slider-btn  intro__slider-btn--next" id="introSliderNext" type="button">Next</button>
+                </div>
             </div><!--/.intro__inner-->
         </div><!--/.container-->
     </div>
@@ -180,7 +195,21 @@
                 </div><!--/.clients__logos-->
 
                 <div class="clients__reviews">
-                    <div class="reviews">
+                    <div class="reviews" id="reviewsSlider">
+                        <div class="reviews__item">
+                            <div class="reviews__header">
+                                <img class="reviews__photo" src="https://placehold.it/100" alt="">
+                                <div class="reviews__header-content">
+                                    <div class="reviews__name">John Smith</div>
+                                    <div class="reviews__company">FOX Hub CEO</div>
+                                </div>
+                            </div>
+                            <div class="reviews__content">
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Praesentium laboriosam eius perspiciatis molestiae aut repellat delectus fugiat veritatis maxime impedit harum accusamus, quas nihil laudantium minima ex sapiente. Error, repudiandae.</p>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Praesentium laboriosam eius perspiciatis molestiae aut repellat delectus fugiat veritatis maxime impedit harum accusamus, quas nihil laudantium minima ex sapiente. Error, repudiandae.</p>
+                            </div>
+                        </div>
+
                         <div class="reviews__item">
                             <div class="reviews__header">
                                 <img class="reviews__photo" src="https://placehold.it/100" alt="">
@@ -462,6 +491,7 @@
 
     <!--Javascript-->
     <script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.6.0.min.js"></script>
+    <script src="assets/js/slick.min.js"></script>
     <script src="assets/js/app.js"></script>
 
 </body>
