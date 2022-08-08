@@ -2,9 +2,20 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <link rel="stylesheet" href="assets/css/slick.css">
+    <link rel="stylesheet" href="assets/css/aos.css">
     <link rel="stylesheet" href="assets/css/style.css">
     <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700;900&family=PT+Sans:wght@400;700&display=swap" rel="stylesheet">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="apple-touch-icon" sizes="180x180" href="assets/img/favicons/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/img/favicons/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="assets/img/favicons/favicon-16x16.png">
+    <link rel="manifest" href="assets/img/favicons/manifest.json">
+    <link rel="mask-icon" href="assets/img/favicons/safari-pinned-tab.svg" color="#004AF2">
+    <meta name="msapplication-TileColor" content="#004AF2">
+    <meta name="theme-color" content="#004AF2">
+
     <title>CenterLogistic</title>
 </head>
 <body>
@@ -12,19 +23,22 @@
 <div class="page">
 
     <!--Header-->
-    <header class="header">
+    <header class="header" id="header">
         <div class="container">
             <div class="header__inner">
-                <a href="index.html"><img src="assets/img/logo.svg" alt="CenterLogistic"></a>
+                <a class="header__logo" href="#" data-scroll="#intro">
+                    <img src="assets/img/logo.svg" alt="CenterLogistic">
+                    <span class="header__logo-text">CenterLogistic</span>
+                </a>
 
-                <nav class="nav">
+                <nav class="nav" id="nav">
                     <a class="nav__link" href="index.html">Home</a>
                     <a class="nav__link" href="blog.html">Blog</a>
                     <a class="nav__link" href="text.html">Privacy Policy</a>
                     <a class="nav__link active" href="text2.html">Terms &amp; Conditions</a>
                 </nav>
 
-                <button class="burger" type="button">
+                <button class="burger" type="button" id="navToggle">
                     <img class="burger__icon" src="assets/img/burger.svg" alt="burger">
                 </button>
 
@@ -34,7 +48,7 @@
 
     
     <!--Intro-->
-    <div class="intro intro--text"></div>
+    <div class="intro intro--text" id="intro"></div>
 
 
     <!--Text-->
@@ -78,7 +92,10 @@
     <!--Footer-->
     <footer class="footer">
         <div class="container">
-            <img src="assets/img/logo-black.svg" alt="logo-black">
+            <a class="header__logo header__logo--black" href="#" data-scroll="#intro">
+                <img src="assets/img/logo-black.svg" alt="CenterLogistic">
+                <span class="header__logo-text">CenterLogistic</span>
+            </a>
             <address class="footer__contacts">
                 <p>New York, Street, ZIP code</p>
                 <p>Call Us:
@@ -89,9 +106,9 @@
             </address>
 
             <nav class="footer__nav">
-                <a href="#">Terms &amp; Contidions</a>
-                <a href="#">Privacy Policy</a>
-                <a href="#">Our blog</a>
+                <a href="text.html">Terms &amp; Contidions</a>
+                <a href="text2.html">Privacy Policy</a>
+                <a href="blog.html">Our blog</a>
             </nav>
         </div>
     </footer>
@@ -100,7 +117,9 @@
 
 
 <!--Javascript-->
-<script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.6.0.min.js"></script>
+<script src="assets/js/jquery-3.6.0.min.js"></script>
+<script src="assets/js/slick.min.js"></script>
+<script src="assets/js/aos.js"></script>
 <script src="assets/js/app.js"></script>
 
 </body>

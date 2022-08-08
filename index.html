@@ -7,6 +7,15 @@
     <link rel="stylesheet" href="assets/css/style.css">
     <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700;900&family=PT+Sans:wght@400;700&display=swap" rel="stylesheet">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="apple-touch-icon" sizes="180x180" href="assets/img/favicons/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/img/favicons/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="assets/img/favicons/favicon-16x16.png">
+    <link rel="manifest" href="assets/img/favicons/manifest.json">
+    <link rel="mask-icon" href="assets/img/favicons/safari-pinned-tab.svg" color="#004AF2">
+    <meta name="msapplication-TileColor" content="#004AF2">
+    <meta name="theme-color" content="#004AF2">
+
     <title>CenterLogistic</title>
 </head>
 <body>
@@ -18,8 +27,9 @@
     <header class="header header--dark" id="header">
         <div class="container">
             <div class="header__inner">
-                <a href="#" data-scroll="#intro">
-                    <img class="img" src="assets/img/logo.svg" alt="CenterLogistic">
+                <a class="header__logo" href="#" data-scroll="#intro">
+                    <img src="assets/img/logo.svg" alt="CenterLogistic">
+                    <span class="header__logo-text">CenterLogistic</span>
                 </a>
 
                 <nav class="nav" id="nav">
@@ -29,7 +39,7 @@
                     <a class="nav__link" href="#" data-scroll="#team">Team</a>
                     <a class="nav__link" href="#" data-scroll="#mission">Mission</a>
                     <a class="nav__link" href="#" data-scroll="#news">News</a>
-                    <a class="nav__link" href="#">Contact Us</a>
+                    <a class="nav__link" href="#" data-modal="#becomeClientModal">Contact Us</a>
                 </nav>
 
                 <button class="burger" type="button" id="navToggle">
@@ -48,10 +58,16 @@
 
         <div class="intro__slider" id="introSlider">
             <div class="slider-item">
-                <div class="intro__slider-item" style="background-image: url(assets/img/intro-bg.jpg)"></div>
+                <div class="intro__slider-item" style="background-image: url(assets/img/slider/slide-1.jpg)"></div>
             </div>
             <div class="slider-item">
-                <img class="intro__slider-photo" src="assets/img/intro-bg.jpg" alt="">
+                <img class="intro__slider-photo" src="assets/img/slider/slide-2.jpg" alt="">
+            </div>
+            <div class="slider-item">
+                <div class="intro__slider-item" style="background-image: url(assets/img/slider/slide-3.jpg)"></div>
+            </div>
+            <div class="slider-item">
+                <img class="intro__slider-photo" src="assets/img/slider/slide-4.jpg" alt="">
             </div>
         </div>
 
@@ -203,7 +219,7 @@
                     <div class="reviews" id="reviewsSlider">
                         <div class="reviews__item">
                             <div class="reviews__header">
-                                <img class="reviews__photo" src="https://placehold.it/100" alt="">
+                                <img class="reviews__photo" src="assets/img/clients/clients-1.jpg" alt="">
                                 <div class="reviews__header-content">
                                     <div class="reviews__name">John Smith</div>
                                     <div class="reviews__company">FOX Hub CEO</div>
@@ -217,10 +233,24 @@
 
                         <div class="reviews__item">
                             <div class="reviews__header">
-                                <img class="reviews__photo" src="https://placehold.it/100" alt="">
+                                <img class="reviews__photo" src="assets/img/clients/clients-2.jpg" alt="">
                                 <div class="reviews__header-content">
                                     <div class="reviews__name">John Smith</div>
-                                    <div class="reviews__company">FOX Hub CEO</div>
+                                    <div class="reviews__company">HEX LAB</div>
+                                </div>
+                            </div>
+                            <div class="reviews__content">
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Praesentium laboriosam eius perspiciatis molestiae aut repellat delectus fugiat veritatis maxime impedit harum accusamus, quas nihil laudantium minima ex sapiente. Error, repudiandae.</p>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Praesentium laboriosam eius perspiciatis molestiae aut repellat delectus fugiat veritatis maxime impedit harum accusamus, quas nihil laudantium minima ex sapiente. Error, repudiandae.</p>
+                            </div>
+                        </div>
+
+                        <div class="reviews__item">
+                            <div class="reviews__header">
+                                <img class="reviews__photo" src="assets/img/clients/clients-3.jpg" alt="">
+                                <div class="reviews__header-content">
+                                    <div class="reviews__name">John Smith</div>
+                                    <div class="reviews__company">Lab</div>
                                 </div>
                             </div>
                             <div class="reviews__content">
@@ -361,7 +391,9 @@
             </div>
 
             <div class="text-center">
-            <button class="btn btn--orange btn--shadow" type="button"><span>Become a client</span></button>
+            <button class="btn btn--orange btn--shadow" type="button" data-modal="#becomeClientModal">
+                <span>Become a client</span>
+            </button>
             </div>
         </div>
     </section>
@@ -380,7 +412,7 @@
                     <div class="articles__text">
                         Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit.
                     </div>
-                    <time class="articles__date" pubdate="21-03-2019 19:00">21 March, 2019</time>
+                    <time class="articles__date" datetime="2019-03-21 19:00">21 March, 2019</time>
                 </article>
 
                 <article class="articles__item" data-aos="fade-in">
@@ -390,7 +422,7 @@
                     <div class="articles__text">
                         Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit.
                     </div>
-                    <time class="articles__date" pubdate="21-03-2019 19:00">21 March, 2019</time>
+                    <time class="articles__date" datetime="2019-03-21 19:00">21 March, 2019</time>
                 </article>
             </div><!--/.articles-->
 
@@ -402,7 +434,10 @@
     <!--Footer-->
     <footer class="footer">
         <div class="container">
-            <img src="assets/img/logo-black.svg" alt="logo-black">
+                <a class="header__logo header__logo--black" href="#" data-scroll="#intro">
+                    <img src="assets/img/logo-black.svg" alt="CenterLogistic">
+                    <span class="header__logo-text">CenterLogistic</span>
+                </a>
             <address class="footer__contacts">
                 <p>New York, Street, ZIP code</p>
                 <p>Call Us:
@@ -413,9 +448,9 @@
             </address>
 
             <nav class="footer__nav">
-                <a href="#">Terms &amp; Contidions</a>
-                <a href="#">Privacy Policy</a>
-                <a href="#">Our blog</a>
+                <a href="text.html">Terms &amp; Contidions</a>
+                <a href="text2.html">Privacy Policy</a>
+                <a href="blog.html">Our blog</a>
             </nav>
         </div>
     </footer>
@@ -495,7 +530,7 @@
 
 
     <!--Javascript-->
-    <script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.6.0.min.js"></script>
+    <script src="assets/js/jquery-3.6.0.min.js"></script>
     <script src="assets/js/slick.min.js"></script>
     <script src="assets/js/aos.js"></script>
     <script src="assets/js/app.js"></script>

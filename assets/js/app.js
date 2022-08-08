@@ -121,7 +121,7 @@ $(function() {
                 transform: 'scale(1)',
                 opacity: '1'
             });
-        });
+        }, 200);
     });
 
 
@@ -172,9 +172,9 @@ $(function() {
         slidesToScroll: 1,
         arrows: false,
         fade: true,
-        autoplay: false,
+        autoplay: true,
         autoplaySpeed: 4000,
-        speed: 500
+        speed: 1000
     });
 
 
@@ -198,7 +198,9 @@ $(function() {
         slidesToScroll: 1,
         arrows: false,
         dots: true,
-        speed: 500
+        speed: 500,
+        autoplay: true,
+        autoplaySpeed: 4000
     });
     
 
